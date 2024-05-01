@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to bottom, #2F5A80 0%, #a9c7e2 75%);
+
+}
+.tititulo-sessao{
+    color:#FFFFFF
+}
+.col-8, h2,p{
+    color:#FFFFFF
+}
+
+.col{
+    border-radius: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.card{
+    background-color:#a9c7e2;
+}
+.card-title{
+    color: #2F5A80;
+    text-align: center;
+}
