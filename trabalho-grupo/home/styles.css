@@ -1,23 +1,32 @@
-/* * {
+/* Removendo espaçamentos padrão do bootstrap */
+
+.custom-container *,
+.custom-footer * {
   margin: 0px;
   padding: 0px;
-} */
-
-.navbar .navbar-brand img {
-  width: auto;
-  height: 80px;
 }
 
-.navbar .navbar-brand p {
-  margin: 0px 20px;
+/* Customização do bootstrap do carrosel */
+
+.custom-carousel-caption * {
+  padding: 0px;
+  margin: 0px;
 }
 
-.destaques {
-  background-color: rgb(239, 126, 85);
+.custom-carousel-caption {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 0rem;
+  border-radius: 5px;
 }
+
+/* Elementos sem bootstrap */
 
 .locais {
   background-color: rgb(226, 116, 116);
+}
+
+.avaliacoes {
+  background-color: rgb(167, 198, 119);
 }
 
 .custom-footer {

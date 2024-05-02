@@ -1,7 +1,9 @@
+/* Remove configurações que vem como padrão */
+
 .custom-navbar * {
-  /* Remove configurações que vem como padrão */
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
 
 /* Geral */
@@ -14,7 +16,7 @@
   padding: 1.2rem 1.2rem;
 }
 
-/* custom-navbar-brand */
+/* Seção da navbar com a logo da página */
 
 .custom-navbar .custom-navbar-brand {
   display: flex;
@@ -41,7 +43,7 @@
   color: white;
 }
 
-/* custom-navbar-pages */
+/* Seção da navbar com os links */
 
 .custom-navbar .custom-navbar-pages {
   display: flex;
