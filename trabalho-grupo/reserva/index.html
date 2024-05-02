@@ -1,3 +1,5 @@
+<!-- Renato -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,20 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serratrip - Faça sua Reserva</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="../global/dropdown/dropdown.js"></script>
+    <link rel="stylesheet" href="../global/dropdown/dropdown.css" />
+    <link rel="stylesheet" href="../global/navbar.css" />
+
 </head>
 <body>
-    <header class="bg-primary text-white py-4">
-        <div class="container">
-            <h1 class="display-4">Serratrip</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Destinos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav class="custom-navbar">
+            <!-- Brand -->
+            <a href="./index.html" class="custom-navbar-brand">
+              <img
+                src="../global/assets/serratrip-logo.png"
+                alt="Logo do SerraTrip"
+              />
+              <h1>SerraTrip</h1>
+            </a>
+      
+            <!-- Links -->
+            <ul class="custom-navbar-pages">
+              <li><a href="../lista-hoteis/">Hotéis</a></li>
+              <li><a href="../reserva/">Reservar</a></li>
+              <li><a href="../sobre/">Sobre</a></li>
+              <li><a href="../sugestoes-criticas/">Sugestões/Críticas</a></li>
+            </ul>
+      
+            <!-- Dropdown -->
+            <div class="custom-dropdown" id="dropdown-button-id">
+              <button
+                class="custom-dropdown-button"
+                onclick="mostrarMenuDropdown('dropdown-button-id', 'dropdown-menu-id')"
+              >
+                Opções
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
+      
+              <div
+                class="custom-dropdown-menu"
+                id="dropdown-menu-id"
+                style="display: none"
+              >
+                <a href="../lista-hoteis/">Hotéis</a>
+                <a href="../reserva/">Reservar</a>
+                <a href="../sobre/">Sobre</a>
+                <a href="../sugestoes-criticas/">Sugestões/Críticas</a>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <section class="container mt-4">
