@@ -20,6 +20,7 @@
   border-radius: 5px;
   position: fixed;
   padding: 0.5rem 0rem;
+  z-index: 99; /* Garante que o menu fique acima de todos os elementos na tela */
 }
 
 .custom-dropdown .custom-dropdown-menu a {
