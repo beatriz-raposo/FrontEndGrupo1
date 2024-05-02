@@ -14,21 +14,127 @@
 }
 
 .custom-carousel-caption {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   padding: 0.5rem 0rem;
   border-radius: 5px;
 }
 
 /* Elementos sem bootstrap */
 
+/* Custom Container */
+
+.custom-container {
+  padding: 0rem 2rem;
+  background: linear-gradient(to bottom, #fffaf0, #fff2d8);
+}
+
+/* Padrão */
+
+.section-header {
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-header button {
+  border: none;
+  border-radius: 20px;
+  padding: 0rem 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fffbf6;
+  font-weight: bold;
+}
+
+.section-header button:hover {
+  background-color: #e4d7bc;
+}
+
+/* Recomendações */
+
+.recomendacoes .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.recomendacoes .cards .card {
+  background-color: rgb(0, 0, 0, 0); /*Fundo completamente transparente */
+  width: 400px;
+  height: auto;
+}
+
+.recomendacoes .cards .card:hover {
+  width: 415px;
+  transition: width 0.6s ease;
+  cursor: pointer;
+}
+
+.recomendacoes .cards .card img {
+  border-radius: 5px;
+}
+
+.recomendacoes .cards .card .card-footer {
+  background: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.recomendacoes .cards .card .card-footer .card-footer-score {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.recomendacoes .cards .card .card-footer .card-footer-score i {
+  color: #ffb702;
+}
+
 .locais {
   background-color: rgb(226, 116, 116);
 }
 
+/* Avaliações */
+
 .avaliacoes {
-  background-color: rgb(167, 198, 119);
+  background-color: rgb(200, 228, 158);
 }
+
+/* Footer */
 
 .custom-footer {
   background-color: rgb(211, 206, 133);
+}
+
+/* Media query */
+
+@media (max-width: 815px) {
+  .recomendacoes .cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 487px) {
+  .recomendacoes .cards .card {
+    width: 80%;
+  }
+
+  .recomendacoes .cards .card:hover {
+    width: 85%;
+  }
+
+  .recomendacoes .cards .card .card-footer {
+    padding: 0.5rem 0.5rem;
+    font-size: 8px;
+  }
 }
