@@ -3,14 +3,17 @@
   color: white;
   border-radius: 5px;
   border: none;
-  padding: 0.5rem 0.5rem;
+  padding: 0.2rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .custom-dropdown .custom-dropdown-button:hover {
   color: rgb(236, 234, 234);
-  padding: 0.8rem 0.8rem;
   background-color: rgb(44, 120, 139);
+  padding: 0.2rem 2rem;
   transition: padding 0.3s;
 }
 

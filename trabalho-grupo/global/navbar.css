@@ -86,4 +86,13 @@
   .custom-navbar .custom-dropdown {
     display: block;
   }
+
+  .custom-navbar .custom-navbar-brand img {
+    width: auto;
+    height: 3rem;
+  }
+  
+  .custom-navbar .custom-navbar-brand h1 {
+    font-size: 2rem;
+  }
 }
