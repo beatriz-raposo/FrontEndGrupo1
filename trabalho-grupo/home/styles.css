@@ -1,0 +1,25 @@
+/* * {
+  margin: 0px;
+  padding: 0px;
+} */
+
+.navbar .navbar-brand img {
+  width: auto;
+  height: 80px;
+}
+
+.navbar .navbar-brand p {
+  margin: 0px 20px;
+}
+
+.destaques {
+  background-color: rgb(239, 126, 85);
+}
+
+.locais {
+  background-color: rgb(226, 116, 116);
+}
+
+.custom-footer {
+  background-color: rgb(211, 206, 133);
+}

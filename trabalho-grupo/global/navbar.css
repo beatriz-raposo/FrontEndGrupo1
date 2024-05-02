@@ -1,0 +1,87 @@
+.custom-navbar * {
+  /* Remove configurações que vem como padrão */
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Geral */
+
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #4275a5, #1b4a76);
+  padding: 1.2rem 1.2rem;
+}
+
+/* custom-navbar-brand */
+
+.custom-navbar .custom-navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.custom-navbar .custom-navbar-brand:hover {
+  padding: 0px 1rem;
+  background-color: #326794;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: padding 0.8s;
+  text-decoration: none;
+}
+
+.custom-navbar .custom-navbar-brand img {
+  width: auto;
+  height: 3.8rem;
+}
+
+.custom-navbar .custom-navbar-brand h1 {
+  color: white;
+}
+
+/* custom-navbar-pages */
+
+.custom-navbar .custom-navbar-pages {
+  display: flex;
+  list-style-type: none;
+  gap: 0.5rem;
+}
+
+.custom-navbar .custom-navbar-pages li a {
+  color: white;
+  padding: 0.5rem 0.5rem;
+  background-color: #326694;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+}
+
+.custom-navbar .custom-navbar-pages li a:hover {
+  color: rgb(236, 234, 234);
+  padding: 0.5rem 1.2rem;
+  background-color: rgb(22, 104, 139);
+  transition: padding 0.6s;
+  text-decoration: none;
+}
+
+.custom-navbar .custom-dropdown {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .custom-navbar .custom-navbar-pages {
+    display: none;
+  }
+
+  .custom-navbar .custom-dropdown {
+    display: block;
+  }
+}
