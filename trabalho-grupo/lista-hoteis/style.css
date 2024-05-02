@@ -38,3 +38,21 @@ a{
     }
 }
 
+.white-dark{
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.dark-mode{
+    background-color: #353535;
+    color: white;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+a img{
+    margin-left: 0.7rem;
+}
+
+.hide{
+    display: none;
+}
+
