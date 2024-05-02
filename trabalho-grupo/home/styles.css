@@ -118,13 +118,13 @@
 
 /* Media query */
 
-@media (max-width: 815px) {
+@media (max-width: 897px) {
   .recomendacoes .cards {
     flex-direction: column;
   }
 }
 
-@media (max-width: 487px) {
+@media (max-width: 517px) {
   .recomendacoes .cards .card {
     width: 80%;
   }
@@ -136,5 +136,20 @@
   .recomendacoes .cards .card .card-footer {
     padding: 0.5rem 0.5rem;
     font-size: 8px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .section-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .section-header button {
+    width: 80%;
   }
 }
