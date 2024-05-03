@@ -3,9 +3,11 @@ function registrarLike(heartId) {
 
   if (heart.classList.contains("fa-solid")) {
     heart.classList.remove("fa-solid");
+    heart.classList.remove("red-heart");
     heart.classList.add("fa-regular");
   } else {
     heart.classList.remove("fa-regular");
     heart.classList.add("fa-solid");
+    heart.classList.add("red-heart");
   }
 }

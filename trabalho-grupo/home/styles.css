@@ -161,6 +161,10 @@
   padding: 0.5rem;
 }
 
+.locais .cards .card-section .card .card-header button .red-heart {
+  color: red;
+}
+
 .locais .cards .card-section .card .card-header button:hover i {
   color: red;
   cursor: pointer;
