@@ -37,6 +37,10 @@
   justify-content: space-between;
 }
 
+.section-header a {
+  text-decoration: none;
+}
+
 .section-header button {
   border: none;
   border-radius: 20px;
@@ -44,6 +48,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: #fffbf6;
   font-weight: bold;
+  padding: 0.3rem 1.2rem;
 }
 
 .section-header button:hover {
@@ -176,6 +181,10 @@
   justify-content: space-between;
 }
 
+.locais .locais-section-header a {
+  text-decoration: none;
+}
+
 .locais .locais-section-header button {
   border: none;
   border-radius: 20px;
@@ -183,6 +192,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: #fffbf6;
   font-weight: bold;
+  padding: 0.3rem 1.2rem;
 }
 
 .locais .locais-section-header button:hover {
@@ -305,6 +315,10 @@
     text-align: center;
     align-items: center;
     gap: 1rem;
+  }
+
+  .section-header a {
+    text-decoration: none;
   }
 
   .section-header h3 {
