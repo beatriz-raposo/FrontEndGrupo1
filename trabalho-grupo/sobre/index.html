@@ -6,16 +6,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SerraTrip - Sobre</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
-    <title>Sobre</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymou" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Global -->
+    <script src="../global/dropdown/dropdown.js"></script>
+    <link rel="stylesheet" href="../global/dropdown/dropdown.css" />
+    <link rel="stylesheet" href="../global/navbar.css" />
+
 </head>
 
 <body>
-    <div class="container" id="container_geral">
+    <!-- Navbar -->
+    <nav class="custom-navbar">
+        <!-- Brand -->
+        <a href="../home/index.html" class="custom-navbar-brand">
+            <img src="../global/assets/serratrip-logo.png" alt="Logo do SerraTrip" />
+            <h1>SerraTrip</h1>
+        </a>
+
+        <!-- Links -->
+        <ul class="custom-navbar-pages">
+            <li><a href="../lista-hoteis/">Hotéis</a></li>
+            <li><a href="../reserva/">Reservar</a></li>
+            <li><a href="../sobre/">Sobre</a></li>
+            <li><a href="../sugestoes-criticas/">Sugestões/Críticas</a></li>
+        </ul>
+
+        <!-- Dropdown -->
+        <div class="custom-dropdown" id="dropdown-button-id">
+            <button class="custom-dropdown-button"
+                onclick="mostrarMenuDropdown('dropdown-button-id', 'dropdown-menu-id')">
+                Opções
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+
+            <div class="custom-dropdown-menu" id="dropdown-menu-id" style="display: none">
+                <a href="../lista-hoteis/">Hotéis</a>
+                <a href="../reserva/">Reservar</a>
+                <a href="../sobre/">Sobre</a>
+                <a href="../sugestoes-criticas/">Sugestões/Críticas</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo -->
+    <div class="container">
         <br>
-        <h2 class="titulo-sessao">Sobre SerraTrip</h2>
-        <hr size="3" width="95%" color="#FFFFFF">
+        <h2 class="titulo-sessao">Sobre</h2>
+        <hr size="3" width="100%" color="#212529">
 
         <div class="texto text-justification">
             <p>
@@ -29,67 +77,67 @@
             </p>
         </div>
         <br>
-        <div class="container text-justification">
-            <div class="row">
-                <div class="col-3 text-center">
-                    <h2>Missão</h2>
-                </div>
-                <br>
-                <div class="col-8">
-                    <p>A missão da Serra Trip é proporcionar experiências memoráveis e aconchegantes
-                        aos nossos clientes,
-                        oferecendo um serviço de reservas de hotéis que seja ágil, confiável e personalizado. Estamos
-                        comprometidos em facilitar viagens inesquecíveis, conectando os viajantes aos melhores destinos
-                        de montanha, promovendo o bem-estar e a harmonia com a natureza.</p>
-                </div>
-                <div class="col-3 text-center">
-                    <h2>Visão</h2>
-                </div>
-                <br>
-                <div class="col-8">
-                    <p>Nossa visão é ser reconhecida como a principal referência em reservas de hotéis, sendo
-                        admirada pela qualidade do nosso atendimento, pela diversidade de opções oferecidas e pelo
-                        compromisso com a sustentabilidade ambiental. Buscamos constantemente inovar e aprimorar nossos
-                        serviços, tornando-nos a escolha preferida dos viajantes que buscam conforto, tranquilidade e
-                        contato com a natureza nas suas jornadas.</p>
-                </div>
-                <div class="col-3 text-center">
-                    <h2>Valores</h2>
-                </div>
-                <br>
-                <div class="col-8">
-                    <p>Excelência: Buscamos a excelência em tudo o que fazemos, desde a seleção dos hotéis parceiros até
-                        o atendimento ao cliente, garantindo sempre a mais alta qualidade em nossos serviços.</p>
 
-                    <p>Integridade: Agimos com transparência, honestidade e ética em todas as nossas interações,
-                        cultivando
-                        relações de confiança com nossos clientes, colaboradores e parceiros.</p>
+        <div class="row">
+            <div class="col-3 text-center">
+                <h2>Missão</h2>
+            </div>
+            <br>
+            <div class="col-8">
+                <p>A missão da Serra Trip é proporcionar experiências memoráveis e aconchegantes
+                    aos nossos clientes,
+                    oferecendo um serviço de reservas de hotéis que seja ágil, confiável e personalizado. Estamos
+                    comprometidos em facilitar viagens inesquecíveis, conectando os viajantes aos melhores destinos
+                    de montanha, promovendo o bem-estar e a harmonia com a natureza.</p>
+            </div>
+            <div class="col-3 text-center">
+                <h2>Visão</h2>
+            </div>
+            <br>
+            <div class="col-8">
+                <p>Nossa visão é ser reconhecida como a principal referência em reservas de hotéis, sendo
+                    admirada pela qualidade do nosso atendimento, pela diversidade de opções oferecidas e pelo
+                    compromisso com a sustentabilidade ambiental. Buscamos constantemente inovar e aprimorar nossos
+                    serviços, tornando-nos a escolha preferida dos viajantes que buscam conforto, tranquilidade e
+                    contato com a natureza nas suas jornadas.</p>
+            </div>
+            <div class="col-3 text-center">
+                <h2>Valores</h2>
+            </div>
+            <br>
+            <div class="col-8">
+                <p>Excelência: Buscamos a excelência em tudo o que fazemos, desde a seleção dos hotéis parceiros até
+                    o atendimento ao cliente, garantindo sempre a mais alta qualidade em nossos serviços.</p>
 
-                    <p>Sustentabilidade: Comprometemo-nos a promover práticas sustentáveis em todas as nossas operações,
-                        contribuindo para a preservação do meio ambiente e o bem-estar das comunidades locais.</p>
+                <p>Integridade: Agimos com transparência, honestidade e ética em todas as nossas interações,
+                    cultivando
+                    relações de confiança com nossos clientes, colaboradores e parceiros.</p>
 
-                    <p>Inovação: Estimulamos a criatividade e a inovação em busca de soluções que superem as
-                        expectativas
-                        dos
-                        nossos clientes e nos mantenham na vanguarda do setor de turismo.</p>
+                <p>Sustentabilidade: Comprometemo-nos a promover práticas sustentáveis em todas as nossas operações,
+                    contribuindo para a preservação do meio ambiente e o bem-estar das comunidades locais.</p>
 
-                    <p>Satisfação do Cliente: Colocamos os interesses e as necessidades dos nossos clientes em primeiro
-                        lugar, dedicando-nos a oferecer uma experiência de reserva de hotéis personalizada, eficiente e
-                        memorável.
-                    </p>
+                <p>Inovação: Estimulamos a criatividade e a inovação em busca de soluções que superem as
+                    expectativas
+                    dos
+                    nossos clientes e nos mantenham na vanguarda do setor de turismo.</p>
 
-                    <p>Com base nestes princípios, a Serra Trip está empenhada em proporcionar momentos únicos e
-                        inesquecíveisaos viajantes que desejam explorar as belezas das regiões serranas com conforto,
-                        segurança e autenticidade.</p>
-                </div>
+                <p>Satisfação do Cliente: Colocamos os interesses e as necessidades dos nossos clientes em primeiro
+                    lugar, dedicando-nos a oferecer uma experiência de reserva de hotéis personalizada, eficiente e
+                    memorável.
+                </p>
+
+                <p>Com base nestes princípios, a Serra Trip está empenhada em proporcionar momentos únicos e
+                    inesquecíveisaos viajantes que desejam explorar as belezas das regiões serranas com conforto,
+                    segurança e autenticidade.</p>
             </div>
         </div>
 
+
         <h2 class="titulo-sessao">Idealizadores</h2>
-        <hr size="3" width="95%" color="#FFFFFF">
+        <hr size="3" width="100%" color="#212529">
 
 
-        <div class="row row-cols-1 row-cols-md-6 g-6">
+        <div class="row row-cols-1 row-cols-md-6 g-2">
             <div class="col">
                 <div class="card">
                     <img src="assets\Amanda.jpg" class="card-img-top" alt="foto de amanda">
@@ -102,7 +150,7 @@
                 <div class="card">
                     <img src="assets/Arthur.jpg" class="card-img-top" alt="foto de arthur">
                     <div class="card-body">
-                        <h5 class="card-title">Arthur<br>Mury</h5>
+                        <h5 class="card-title">Arthur Mury</h5>
                     </div>
                 </div>
             </div>
@@ -114,6 +162,7 @@
                     </div>
                 </div>
             </div>
+            <br>
             <div class="col">
                 <div class="card">
                     <img src="assets/Gui.jpg" class="card-img-top" alt="foto de guilherme">
@@ -138,12 +187,15 @@
                     </div>
                 </div>
             </div>
-
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         </div>
     </div>
+
+    <script>
+        esconderMenuDropdown("dropdown-menu-id");
+    </script>
 </body>
 
 </html>
