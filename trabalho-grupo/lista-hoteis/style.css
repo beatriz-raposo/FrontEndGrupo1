@@ -59,6 +59,12 @@ a img{
 
 .card-hotel img{
     cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.card-hotel img:hover{
+    opacity: 0.7;
 }
 
 .modal-body{
@@ -79,6 +85,7 @@ a img{
         width: 150px;
     }
 }
+
 
 
 
