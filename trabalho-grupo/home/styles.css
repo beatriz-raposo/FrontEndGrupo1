@@ -24,14 +24,15 @@
 /* Custom Container */
 
 .custom-container {
-  padding: 0rem 2rem;
+  padding: 0rem 6rem;
   background: linear-gradient(to bottom, #fffaf0, #fff2d8);
 }
 
 /* Padrão */
 
 .section-header {
-  padding: 1rem 0rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -100,8 +101,59 @@
   color: #ffb702;
 }
 
-.locais {
-  background-color: rgb(226, 116, 116);
+/* Locais */
+
+.locais .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.locais .cards .card-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.locais .cards .card-section h3 {
+  align-self: flex-end;
+}
+
+.locais .cards .card-section .card {
+  background-color: rgb(0, 0, 0, 0); /*Fundo completamente transparente */
+  width: 250px;
+  height: auto;
+}
+
+.locais .cards .card-section .card img {
+  border-radius: 5px;
+}
+
+.locais .cards .card-section .card .card-header {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.locais .cards .card-section .card .card-header button {
+  border-radius: 50%;
+  border: none;
+}
+
+.locais .cards .card-section .card .card-header button i {
+  font-size: 1.5rem;
+  color: black;
+  padding: 0.5rem;
+}
+
+.locais .cards .card-section .card .card-header button:hover i {
+  color: red;
+  cursor: pointer;
 }
 
 /* Avaliações */
@@ -119,6 +171,10 @@
 /* Media query */
 
 @media (max-width: 897px) {
+  .custom-container {
+    padding: 0rem 3rem;
+  }
+
   .recomendacoes .cards {
     flex-direction: column;
   }
@@ -127,10 +183,15 @@
 @media (max-width: 517px) {
   .recomendacoes .cards .card {
     width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
 
   .recomendacoes .cards .card:hover {
     width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
   .recomendacoes .cards .card .card-footer {

@@ -27,6 +27,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Script -->
+    <script src="./index.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -175,11 +178,13 @@
     <div class="custom-container">
       <!-- Recomendações -->
       <section class="recomendacoes">
+        <!-- Título -->
         <div class="section-header">
-          <h3>Recomendações do SerraTrip</h3>
+          <h3>Recomendações do SerraTrip:</h3>
           <button>Ver mais</button>
         </div>
 
+        <!-- Cards -->
         <div class="cards">
           <div class="card">
             <img src="./recomendacoes/item-1.jpg" alt="Foto do hotel 1" />
@@ -254,12 +259,31 @@
 
       <!-- Locais -->
       <section class="locais">
-        <h3>Viagens internacionais</h3>
+        <div class="section-header">
+          <h3>Viagens internacionais:</h3>
+          <button>Ver mais</button>
+        </div>
+        <div class="cards">
+          <div class="card-section">
+            <div class="card">
+              <img src="./recomendacoes/item-4.jpg" alt="Foto do hotel 1" />
+              <div class="card-header">
+                <button onclick="registrarLike('heart-1')" id="like-button-1">
+                  <i class="fa-regular fa-heart" id="heart-1"></i>
+                </button>
+              </div>
+            </div>
+            <h3>Roma</h3>
+          </div>
+        </div>
       </section>
 
       <!-- Avaliações -->
       <section class="avaliacoes">
-        <h3>O que dizem sobre nós</h3>
+        <div class="section-header">
+          <h3>Veja o que dizem sobre nós:</h3>
+          <button>Ver mais</button>
+        </div>
       </section>
     </div>
 
