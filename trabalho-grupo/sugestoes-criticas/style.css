@@ -19,7 +19,7 @@ html, body {
 body{
     background-image: url(img/piscina.jpg);
     background-size: cover;
-    background-position-y: -150px;
+    background-position-y: center;
 }
 
 h1{
