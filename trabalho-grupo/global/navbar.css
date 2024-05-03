@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(45deg, #4275a5, #1b4a76);
+  background: linear-gradient(45deg, #A934C5, #5498fe);
   padding: 1.2rem 1.2rem;
 }
 
@@ -26,7 +26,7 @@
 
 .custom-navbar .custom-navbar-brand:hover {
   padding: 0px 1rem;
-  background-color: #326794;
+  background-color: #5498fe;
   border-radius: 5px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -54,7 +54,7 @@
 .custom-navbar .custom-navbar-pages li a {
   color: white;
   padding: 0.5rem 0.5rem;
-  background-color: #326694;
+  background-color: #6f5bd5;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 5px;
 }
@@ -62,7 +62,7 @@
 .custom-navbar .custom-navbar-pages li a:hover {
   color: rgb(236, 234, 234);
   padding: 0.5rem 1.2rem;
-  background-color: rgb(22, 104, 139);
+  background-color: #5498fe;
   transition: padding 0.6s;
   text-decoration: none;
 }

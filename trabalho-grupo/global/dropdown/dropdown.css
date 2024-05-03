@@ -1,5 +1,5 @@
 .custom-dropdown .custom-dropdown-button {
-  background-color: #326694;
+  background-color: #6f5bd5;
   color: white;
   border-radius: 5px;
   border: none;
@@ -12,7 +12,7 @@
 
 .custom-dropdown .custom-dropdown-button:hover {
   color: rgb(236, 234, 234);
-  background-color: rgb(44, 120, 139);
+  background-color: #5498fe;
   padding: 0.2rem 2rem;
   transition: padding 0.3s;
 }

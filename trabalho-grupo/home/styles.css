@@ -190,15 +190,9 @@
   background-color: rgb(200, 228, 158);
 }
 
-/* Footer */
-
-.custom-footer {
-  background-color: rgb(211, 206, 133);
-}
-
 /* Media query */
 
-@media (max-width: 897px) {
+@media (max-width: 1010px) {
   .custom-container {
     padding: 0rem 3rem;
   }
@@ -206,9 +200,7 @@
   .recomendacoes .cards {
     flex-direction: column;
   }
-}
 
-@media (max-width: 517px) {
   .recomendacoes .cards .card {
     width: 80%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
@@ -255,5 +247,11 @@
 
   .locais-section-header button {
     width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .locais .cards .card-section .card {
+    width: 210px;
   }
 }
