@@ -1,0 +1,42 @@
+.custom-dropdown .custom-dropdown-button {
+  background-color: #6f5bd5;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 0.2rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.custom-dropdown .custom-dropdown-button:hover {
+  color: rgb(236, 234, 234);
+  background-color: #5498fe;
+  padding: 0.2rem 2rem;
+  transition: padding 0.3s;
+}
+
+.custom-dropdown .custom-dropdown-menu {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 5px;
+  position: fixed;
+  padding: 0.5rem 0rem;
+  z-index: 99; /* Garante que o menu fique acima de todos os elementos na tela */
+}
+
+.custom-dropdown .custom-dropdown-menu a {
+    color: black;
+    display: block;
+    height: 2rem;
+    padding: 0rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.custom-dropdown .custom-dropdown-menu a:hover {
+  background-color: rgb(216, 216, 216);
+  text-decoration: none;
+  border: 1px solid rgb(198, 198, 198);
+}
