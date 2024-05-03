@@ -7,11 +7,10 @@
   }
 body{
   background: linear-gradient(180deg, #FFF2D8 0%, #FFFAF0 100%);
-
-
     }
-.h2{
+.col-3 h2{
     justify-content: center; 
+    
 }
 .card, col{
     border-radius: 20px;
