@@ -1,0 +1,98 @@
+/* Remove configurações que vem como padrão */
+
+.custom-navbar * {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+/* Geral */
+
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #A934C5, #5498fe);
+  padding: 1.2rem 1.2rem;
+}
+
+/* Seção da navbar com a marca da página */
+
+.custom-navbar .custom-navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.custom-navbar .custom-navbar-brand:hover {
+  padding: 0px 1rem;
+  background-color: #5498fe;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: padding 0.8s;
+  text-decoration: none;
+}
+
+.custom-navbar .custom-navbar-brand img {
+  width: auto;
+  height: 3.8rem;
+}
+
+.custom-navbar .custom-navbar-brand h1 {
+  color: white;
+}
+
+/* Seção da navbar com os links */
+
+.custom-navbar .custom-navbar-pages {
+  display: flex;
+  list-style-type: none;
+  gap: 0.5rem;
+}
+
+.custom-navbar .custom-navbar-pages li a {
+  color: white;
+  padding: 0.5rem 0.5rem;
+  background-color: #6f5bd5;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+}
+
+.custom-navbar .custom-navbar-pages li a:hover {
+  color: rgb(236, 234, 234);
+  padding: 0.5rem 1.2rem;
+  background-color: #5498fe;
+  transition: padding 0.6s;
+  text-decoration: none;
+}
+
+.custom-navbar .custom-dropdown {
+  display: none;
+}
+
+@media (max-width: 910px) {
+  .custom-navbar {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 676px) {
+  .custom-navbar .custom-navbar-pages {
+    display: none;
+  }
+
+  .custom-navbar .custom-dropdown {
+    display: block;
+  }
+
+  .custom-navbar .custom-navbar-brand img {
+    width: auto;
+    height: 3rem;
+  }
+  
+  .custom-navbar .custom-navbar-brand h1 {
+    font-size: 2rem;
+  }
+}
