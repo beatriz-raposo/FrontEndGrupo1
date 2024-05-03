@@ -325,10 +325,6 @@
     font-size: 1.2rem;
   }
 
-  .section-header button {
-    width: 80%;
-  }
-
   .locais .locais-section-header {
     flex-direction: column;
     text-align: center;
@@ -338,10 +334,6 @@
 
   .locais-section-header h3 {
     font-size: 1.2rem;
-  }
-
-  .locais-section-header button {
-    width: 80%;
   }
 }
 
