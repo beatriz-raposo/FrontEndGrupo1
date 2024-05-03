@@ -1,91 +1,85 @@
-.card-hotel{
-    gap: 2rem;
+.card-hotel {
+  gap: 2rem;
 }
 
-.container{
-    gap: 0.65rem;
+.container {
+  gap: 0.65rem;
 }
 
-.sobre-hotel{
-    padding: 1rem 2rem;
+.sobre-hotel {
+  padding: 1rem 2rem;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 .mapa {
-    display: grid;
-    justify-items: center;
-    gap: 0.2rem;
+  display: grid;
+  justify-items: center;
+  gap: 0.2rem;
 }
 
-.mapa button{
-    margin-bottom: 1rem;
+.mapa button {
+  margin-bottom: 1rem;
 }
 
-.valor{
+.valor {
+  text-align: center;
+}
+
+@media (max-width: 968px) {
+  .card-hotel {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-}
-
-@media(max-width:968px){
-    .card-hotel{
-     
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .filter{
-        display: none;
-    }
-}
-
-.white-dark{
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
-}
-
-.dark-mode{
-    background-color: #353535;
-    color: white;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
-}
-
-a img{
-    margin-left: 0.7rem;
-}
-
-.hide{
+  }
+  .filter {
     display: none;
+  }
 }
 
-
-.card-hotel img{
-    cursor: pointer;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+.white-dark {
+  background-color: #faf2e2;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.card-hotel img:hover{
-    opacity: 0.7;
+.dark-mode {
+  background-color: #353535;
+  color: white;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.modal-body{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 0.3rem;
+a img {
+  margin-left: 0.7rem;
 }
 
-.modal-body img{
-    width: 200px;
-    border-radius: 0.5rem;
+.hide {
+  display: none;
 }
 
-
-@media (max-width: 968px){
-    .modal-body img{
-        width: 150px;
-    }
+.card-hotel img {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
+.card-hotel img:hover {
+  opacity: 0.7;
+}
 
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 0.3rem;
+}
 
+.modal-body img {
+  width: 200px;
+  border-radius: 0.5rem;
+}
 
+@media (max-width: 968px) {
+  .modal-body img {
+    width: 150px;
+  }
+}
