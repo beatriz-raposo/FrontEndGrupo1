@@ -20,6 +20,8 @@
 - [GitHub](https://github.com/)
 <div align="center">
 
+<img width="600px" height="800px" src="./ImagemHome.png" alt="imagem da home do site">
+
 </div>
  Autor
 
