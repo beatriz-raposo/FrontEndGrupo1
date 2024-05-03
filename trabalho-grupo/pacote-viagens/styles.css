@@ -1,0 +1,54 @@
+.body{
+  background-color: aqua;
+}
+/* Removendo espaçamentos padrão do bootstrap */
+
+.custom-container *,
+.custom-footer * {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Customização do bootstrap do carrosel */
+
+.custom-carousel-caption * {
+  padding: 0px;
+  margin: 0px;
+}
+
+.custom-carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 0rem;
+  border-radius: 5px;
+}
+
+/* Elementos sem bootstrap */
+
+/* Custom Container */
+
+.custom-container {
+  padding: 0rem 6rem;
+  background: linear-gradient(to bottom, #fffaf0, #fff2d8);
+}
+
+/* Padrão */
+
+.section-header {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-header button {
+  border: none;
+  border-radius: 20px;
+  padding: 0rem 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fffbf6;
+  font-weight: bold;
+}
+
+.section-header button:hover {
+  background-color: #e4d7bc;
+}
