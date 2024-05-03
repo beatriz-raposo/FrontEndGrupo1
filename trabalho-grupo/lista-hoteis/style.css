@@ -56,3 +56,29 @@ a img{
     display: none;
 }
 
+
+.card-hotel img{
+    cursor: pointer;
+}
+
+.modal-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 0.3rem;
+}
+
+.modal-body img{
+    width: 200px;
+    border-radius: 0.5rem;
+}
+
+
+@media (max-width: 968px){
+    .modal-body img{
+        width: 150px;
+    }
+}
+
+
+
