@@ -103,12 +103,19 @@
 
 /* Locais */
 
+.locais {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  margin: 0.5rem 0rem;
+  padding: 1rem 0.5rem;
+}
+
 .locais .cards {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  flex-wrap: wrap;
+  overflow-x: auto;
   gap: 1rem;
 }
 
@@ -133,6 +140,8 @@
 
 .locais .cards .card-section .card .card-header {
   position: absolute;
+  background-color: rgb(0, 0, 0, 0);
+  border: none;
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -154,6 +163,25 @@
 .locais .cards .card-section .card .card-header button:hover i {
   color: red;
   cursor: pointer;
+}
+
+.locais .locais-section-header {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.locais .locais-section-header button {
+  border: none;
+  border-radius: 20px;
+  padding: 0rem 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fffbf6;
+  font-weight: bold;
+}
+
+.locais .locais-section-header button:hover {
+  background-color: #e4d7bc;
 }
 
 /* Avaliações */
@@ -211,6 +239,21 @@
   }
 
   .section-header button {
+    width: 80%;
+  }
+
+  .locais .locais-section-header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .locais-section-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .locais-section-header button {
     width: 80%;
   }
 }
